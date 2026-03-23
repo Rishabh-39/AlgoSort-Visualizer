@@ -23,7 +23,7 @@ export default function AlgorithmSelector({
 
   return (
     <div className="w-64 border-r border-gray-800 p-4 flex flex-col">
-      <h2 className="text-xl mb-4 border-b border-gray-800 pb-2">Sorting Algorithms</h2>
+      <h2 className="text-xl mb-4 border-b border-gray-800 pb-2">⚡ AlgoSort</h2>
       
       <div className="space-y-2 mb-8">
         {algorithms.map(algo => (
