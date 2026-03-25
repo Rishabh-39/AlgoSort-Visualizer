@@ -2,7 +2,7 @@
 
 A visual, step-by-step tool that shows you **exactly how sorting algorithms work** — no guessing, no confusion. Just watch the bars move and understand what's happening under the hood.
 
-🔗 **[Live Demo](https://algo-sort-visualizer-tau.vercel.app/)** &nbsp;|&nbsp; ⭐ **[Star this repo](https://github.com/Rishabh-39/AlgoSort-Visualizer)**
+🔗 **[Live Demo](https://algo-sort-visualizer-tau.vercel.app/)**
 
 ---
 
@@ -33,28 +33,6 @@ It turns abstract algorithms into **animated bar charts** so you can literally *
 | **JavaScript** | Core logic for all three sorting algorithms |
 | **Tailwind CSS** | Fast, clean styling |
 | **GSAP** | Smooth bar animations |
-
----
-
-## 🚀 Run It Locally
-
-Make sure you have **Node.js** installed, then:
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/Rishabh-39/AlgoSort-Visualizer.git
-
-# 2. Go into the project folder
-cd AlgoSort-Visualizer
-
-# 3. Install dependencies
-npm install
-
-# 4. Start the app
-npm start
-```
-
-Then open **http://localhost:3000** in your browser. That's it!
 
 ---
 
@@ -107,10 +85,9 @@ I made this to get better at React and to actually *understand* sorting algorith
 
 ## 📬 Connect
 
-**Rishabh Tomar**  
+**Rishabh Tomar😉**  
 📧 [rishabhtomar.in@gmail.com](mailto:rishabhtomar.in@gmail.com)  
 💼 [LinkedIn](https://www.linkedin.com/in/rishabh-tomar-8a7885243/)  
-🐙 [GitHub](https://github.com/Rishabh-39)
 
 ---
 
