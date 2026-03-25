@@ -1,94 +1,140 @@
-# 🔢 AlgoSort — Sorting Algorithm Visualizer
+<div align="center">
 
-A visual, step-by-step tool that shows you **exactly how sorting algorithms work** — no guessing, no confusion. Just watch the bars move and understand what's happening under the hood.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:11998e,100:38ef7d&height=200&section=header&text=AlgoSort&fontSize=80&fontColor=white&fontAlignY=38&desc=See%20how%20sorting%20algorithms%20work%20—%20step%20by%20step&descAlignY=60&descSize=18" />
 
-🔗 **[Live Demo](https://algo-sort-visualizer-tau.vercel.app/)**
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-11998e?style=for-the-badge)](https://algo-sort-visualizer-tau.vercel.app/)
+
+
+<br/>
+
+![React](https://img.shields.io/badge/React.js-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white)
+
+</div>
 
 ---
 
-## 🤔 What Is This?
+## 📊 What is AlgoSort?
 
-Most people learn sorting algorithms by staring at code — which honestly isn't the easiest way. **AlgoSort** fixes that.
+AlgoSort is a **sorting algorithm visualizer** — it shows you exactly what happens inside an algorithm, one step at a time, using smooth animations.
 
-It turns abstract algorithms into **animated bar charts** so you can literally *see* how elements get compared, swapped, and sorted in real time. Great for students, beginners, or anyone who wants a visual refresher.
+Instead of just reading about how Bubble Sort or Merge Sort works, you can **watch it happen live** on a set of bars. Each bar represents a number, and you can see how they move and swap until everything is sorted.
+
+> 🎯 Great for students learning DSA &nbsp;·&nbsp; 🎬 Smooth animations with GSAP &nbsp;·&nbsp; 🎛️ Control the speed and array size
 
 ---
 
-## ✨ What It Can Do
+## ✨ What can you do with it?
 
-- 📊 **Visualizes 3 sorting algorithms** — Bubble Sort, Merge Sort, and Quick Sort
-- 🎬 **Step-by-step GSAP animations** — smooth and easy to follow
-- ⚡ **Speed control** — slow it down to understand, or speed it up once you get it
-- 🔢 **Array size selector** — test with small or large arrays
-- ❓ **Built-in Help / FAQ module** — explains what each algorithm does, right inside the app
-- 📱 **Works on all screen sizes**
+| Feature | What it does |
+|---|---|
+| 👁️ **Visual Step-by-Step** | Watch each comparison and swap happen as an animation |
+| ⚡ **Sorting Algorithms** | Like Bubble Sort, Merge Sort, Quick Sort — all in one place |
+| 🎛️ **Speed Control** | Slow it down to understand, or speed it up to see the full run |
+| 📐 **Array Size Control** | Choose how many bars to sort — small or large |
+| 🔀 **Random Array** | Generate a new random set of numbers anytime |
+| ❓ **Help Module** | Built-in FAQ that answers common questions about each algorithm |
 
 ---
 
 ## 🛠️ Built With
 
-| Technology | Why It's Used |
-|---|---|
-| **React.js** | Handles all the UI and state (hooks-based) |
-| **JavaScript** | Core logic for all three sorting algorithms |
-| **Tailwind CSS** | Fast, clean styling |
-| **GSAP** | Smooth bar animations |
+| Part | Tool | Why |
+|---|---|---|
+| **UI Framework** | React.js | Easy to manage each bar as a component |
+| **Animations** | GSAP | Smooth, frame-by-frame animation control |
+| **Styling** | Tailwind CSS | Fast and clean styling without writing much CSS |
+| **Logic** | JavaScript | Algorithm logic written in plain JS functions |
+| **Deployed On** | Vercel | Free, fast, and connects directly to GitHub |
 
 ---
 
-## 📖 How to Use It
-
-1. **Pick an algorithm** — choose between Bubble Sort, Merge Sort, or Quick Sort
-2. **Set your array size** — use the slider to pick how many bars you want
-3. **Adjust the speed** — slower = easier to understand what's happening
-4. **Hit Sort** — watch the algorithm work through the array live
-5. **Not sure how it works?** — open the Help module for a quick explanation
-
----
-
-## 🧠 Algorithms Covered
-
-### Bubble Sort
-The simplest one. Repeatedly compares two neighboring elements and swaps them if they're in the wrong order. Slow, but very easy to follow visually.
-- ⏱️ Time: O(n²) &nbsp;|&nbsp; 💾 Space: O(1)
-
-### Merge Sort
-Splits the array in half, sorts each half, then merges them back together. Faster than Bubble Sort and great for understanding "divide and conquer."
-- ⏱️ Time: O(n log n) &nbsp;|&nbsp; 💾 Space: O(n)
-
-### Quick Sort
-Picks a "pivot" element and puts everything smaller on the left and bigger on the right, then repeats. One of the most popular algorithms in real-world use.
-- ⏱️ Time: O(n log n) avg &nbsp;|&nbsp; 💾 Space: O(log n)
-
----
-
-## 📁 Project Structure
+## 📁 Folder Structure
 
 ```
 AlgoSort-Visualizer/
+│
 ├── src/
-│   ├── components/        # UI components (controls, bars, help modal)
-│   ├── algorithms/        # Sorting logic (bubble, merge, quick)
-│   ├── App.js             # Main app
-│   └── index.js           # Entry point
-├── public/
-└── package.json
+│   ├── components/
+│   │   ├── ArrayBar.jsx        # Each bar you see on screen
+│   │   ├── Controls.jsx        # Speed slider, size slider, buttons
+│   │   └── HelpModule.jsx      # FAQ popup with algorithm info
+│   │
+│   ├── algorithms/
+│   │   ├── bubbleSort.js       # Bubble sort logic + animation steps
+│   │   ├── mergeSort.js        # Merge sort logic + animation steps
+│   │   └── quickSort.js        # Quick sort logic + animation steps
+│   │
+│   ├── App.jsx                 # Main app — connects everything
+│   └── index.js                # Entry point
+│
+└── README.md
 ```
 
 ---
 
-## 🙌 Why I Built This
+## ⚙️ How the animation works
 
-I made this to get better at React and to actually *understand* sorting algorithms beyond just memorizing code. Turns out, watching them visually makes a huge difference — hope it helps you too!
+The idea is simple:
+
+```
+You click "Sort"
+        ↓
+The algorithm runs and records every swap it makes
+        ↓
+Those swaps are turned into a list of animation steps
+        ↓
+GSAP plays each step one by one on the bars
+        ↓
+You see the bars moving in real time — slow or fast
+```
+
+This way the algorithm logic and the animation are kept separate — making the code clean and easy to follow.
 
 ---
 
-## 📬 Connect
+## 🎮 How to use it
 
-**Rishabh Tomar😉**  
-📧 [rishabhtomar.in@gmail.com](mailto:rishabhtomar.in@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/rishabh-tomar-8a7885243/)  
+1. Open the app
+2. Pick a sorting algorithm from the top bar
+3. Use the **size slider** to set how many bars you want
+4. Use the **speed slider** to set how fast the animation runs
+5. Click **"Generate New Array"** to shuffle the bars
+6. Click **"Sort"** and watch it go
+7. Click **"Help"** anytime to open the help section
 
 ---
 
-> If this helped you, consider dropping a ⭐ on the repo — it really does help!
+## 🌐 Where it's hosted
+
+| What | Where |
+|---|---|
+| Frontend | Vercel |
+| Deploy trigger | Auto-deploys when code is pushed to GitHub |
+
+---
+
+## 🙋‍♂️ Made by
+
+<div align="center">
+
+**Rishabh Tomar😉**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rishabh-tomar-8a7885243/)
+[![Email](https://img.shields.io/badge/Email-Say%20Hi-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rishabhtomar.in@gmail.com)
+
+</div>
+
+---
+
+<div align="center">
+
+If this helped you understand sorting algorithms better, drop a ⭐ — it keeps me going!
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:11998e,100:38ef7d&height=100&section=footer"/>
+
+</div>
