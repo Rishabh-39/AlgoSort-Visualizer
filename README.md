@@ -103,9 +103,8 @@ This way the algorithm logic and the animation are kept separate — making the 
 2. Pick a sorting algorithm from the top bar
 3. Use the **size slider** to set how many bars you want
 4. Use the **speed slider** to set how fast the animation runs
-5. Click **"Generate New Array"** to shuffle the bars
-6. Click **"Sort"** and watch it go
-7. Click **"Help"** anytime to open the help section
+5. Click **"Play"** and watch it go
+6. Click **"Help"** anytime to open the help section
 
 ---
 
