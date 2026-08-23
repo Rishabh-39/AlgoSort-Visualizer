@@ -108,15 +108,6 @@ This way the algorithm logic and the animation are kept separate — making the 
 
 ---
 
-## 🌐 Where it's hosted
-
-| What | Where |
-|---|---|
-| Frontend | Vercel |
-| Deploy trigger | Auto-deploys when code is pushed to GitHub |
-
----
-
 ## 🙋‍♂️ Made by
 
 <div align="center">
